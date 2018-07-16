@@ -1,0 +1,188 @@
+body
+	font-family: 'PTSans' 
+
+.inner
+	max-width: 1280px
+	padding: 20px
+	margin: 0 auto
+	+sm
+		padding: 10px
+
+.btn
+	width: 100%
+	display: inline-block
+	padding: 14px 15px
+	background-color: #7a7a7a
+	text-transform: uppercase
+	color: #ffffff
+	border-radius: 5px
+
+.tour
+	background-color: #ededed
+	&__top
+		display: flex
+	&__menu
+		margin-bottom: 17px
+		width: 66.68%
+	
+.menu
+	font-size: 0
+	display: flex
+	flex-wrap: wrap
+	&__item
+		display: inline-block
+		background-color: #898989
+		width: 25%
+		text-align: center
+		height: 30px
+		line-height: 30px
+		+md
+			width: 79%
+		&.is-active
+			background-color: #c8c8c8
+		&_hide
+			+md
+				width: 7%
+		&_md
+			+md
+				width: 79%
+	&__link
+		text-decoration: none
+		display: inline-block
+		color: #ffffff
+		font-size: 13px
+		text-transform: uppercase
+		+md
+			font-size: 12px
+		&_hide
+			+md
+				display: none
+
+	&__icon
+		font-size: 17px
+		display: inline-block
+		vertical-align: middle
+		margin-right: 5px
+		+md
+			margin-right: 0
+.form
+	&__row
+		display: flex
+		margin: 0 -20px
+		align-items: flex-start
+		&:not(:last-child)
+			margin-bottom: 22px
+		+sm
+			display: block
+	&__row-sm
+		display: flex
+		justify-content: space-between
+		margin: 0 -20px
+		+sm
+			margin-bottom: 15px
+	&__button
+		margin-bottom: 5px
+		margin-top: 13px
+	&__lable
+		color: #898989
+		display: inline-block
+		font-size: 14px
+		text-transform: uppercase
+		margin-bottom: 5px
+		+sm
+			font-size: 12px
+	&__link
+		text-align: center
+	&__date
+		border: 1px solid #b7b7b7
+		height: 28px
+		padding-left: 12px
+		width: 100%
+		color: #989fa4
+		border-radius: 4px
+
+.link
+	display: flex
+	align-items: flex-end
+	justify-content: center
+	color: #686868
+	text-decoration: none
+	&__icon
+		.icon-arrow
+			font-size: 10px
+			fill: #7a7a7a
+.row
+	display: flex
+	margin: 0 -20px
+	align-items: flex-start
+.col
+	padding: 0 20px 
+	&-mob-show
+		display: none
+		+sm
+			display: block
+	&-mob-hide
+		+sm
+			display: none
+	&-70
+		width: 66.67%
+		+sm
+			width: 100%
+	&-30
+		width: 33.33%
+		+sm
+			width: 100%
+	&-50
+		width: 50%
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b
+	background: url('../img/arrow.png') no-repeat
+	border-color: transparent
+	border-style: none
+	width: 15px
+	height: 10px
+	background-size: contain
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b
+	transform: rotate(180deg)
+	margin-left: -10px
+
+.select2-results__option
+	padding: 7px 0 7px 20px
+
+.select2-container--default .select2-selection--single .select2-selection__rendered
+	color: #989fa4
+
+.select2-container--default .select2-selection--single .select2-selection__placeholder
+	font-style: italic	
+.button
+	width: 16.66%
+	height: 30px
+	text-transform: uppercase
+	color: #ffffff
+	font-size: 0
+	background-color: #565656
+	&__login
+		+md
+			width: 30%
+	&__tour
+		background-color: #b4b4b4
+		+md
+			width: 10%
+	&__icon
+		display: inline-block
+		vertical-align: middle
+		.icon-user
+			font-size: 18px
+			fill: #ffffff
+		.icon-heart
+			font-size: 18px
+			fill: #565656
+	&__text
+		margin-left: 5px
+		font-family: 'Roboto'
+		display: inline-block
+		vertical-align: middle
+		font-size: 13px
+		&_hide
+			+md
+				display: none

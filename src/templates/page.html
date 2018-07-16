@@ -1,0 +1,101 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<div class="tour">
+	<div class="tour__inner inner">
+		<div class="tour__top">
+			<ul class="tour__menu menu">
+				<li class="menu__item menu__item_hide">
+					<a href="#" class="menu__link menu__link_hide">Пакетые туры</a>
+				</li>
+				<li class="menu__item is-active">
+					<a href="#" class="menu__link ">Экскурсионные туры</a>
+				</li>
+				<li class="menu__item menu__item_hide">
+					<a href="#" class="menu__link menu__link_hide">Билеты</a>
+				</li>
+				<li class="menu__item menu__item_hide">
+					<a href="#" class="menu__link menu__link_hide">Отели</a>
+				</li>
+			</ul>
+				<button class="button button__tour">
+					<span class="button__icon">{{mixins.icon('heart')}}</span>
+					<span class="button__text button__text_hide">Избранные туры</span>
+				</button>
+				<button class="button button__login menu__item_md">
+					<span class="button__icon">{{mixins.icon('user')}}</span>
+					<span class="button__text">Вход</span>
+			</button>
+		</div>	
+		<form action="#" class="form">
+			<div class="form__row">
+				<div class="col col-70">
+					<div class="form__group">
+						<label class="form__lable">Куда</label>
+						<select class="js-select js-states form-control" name="state" style="width:100%">
+							<option value=""></option>
+						  <option>Турция</option>
+						  <option>Эгипет</option>
+						</select>
+					</div>
+				</div>
+				<div class="col col-30 col-mob-hide">
+					<div class="form__group">
+						<label class="form__lable">Откуда</label>
+						<select class="js-select-where js-states form-control" name="state" style="width:100%">
+							<option value="AL">Киев</option>
+							<option value="WY">Львов</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="form__row">
+				<div class="col col-70">
+				 	<div class="form__row-sm">
+				 		<div class="col col-50">
+				 			<div class="form__group">
+				 				<label class="form__lable">Дата начала тура</label>
+				 				<input type="text" name="daterange" class="form__date js-daterange"/>
+				 			</div>
+				 		</div>
+				 		<div class="col col-50">
+				 			<div class="form__group">
+				 				<label class="form__lable">Проезд</label>
+				 				<select class="js-select js-states form-control" name="state" style="width:100%">
+				 				  <option>Включен</option>
+				 				  <option>Невключен</option>
+				 				</select>
+				 			</div>
+				 		</div>
+				 	</div>					
+				</div>
+				<div class="col col-30 col-mob-show">
+					<div class="form__group">
+						<label class="form__lable">Откуда</label>
+						<select class="js-select-where js-states form-control" name="state" style="width:100%">
+							<option value="AL">Киев</option>
+							<option value="WY">Львов</option>
+						</select>
+					</div>
+				</div>
+				<div class="col col-30">
+					<div class="form__button">
+						<button class="btn">
+							Найти
+						</button>
+					</div>
+					<a href="#" class="form__link link">
+						<span class="link__text">Больше параметров поиска</span>
+						<span class="link__icon">{{mixins.icon('arrow')}}</span>	
+					</a>
+				</div>
+			</div>	
+		</form>
+	</div>
+</div>
+
+{% endblock %}
